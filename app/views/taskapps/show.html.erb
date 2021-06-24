@@ -1,0 +1,39 @@
+<div class = "main_container">
+<h2>スケジュール詳細</h2>
+ 
+    <table>
+      <tr>
+        <th>タイトル</th>
+        <td class = "title"><%= @taskapp.title %></td>
+      </tr>
+      <tr>
+        <th>開始日</th>
+        <td><%= @taskapp.start %></td>
+      </tr>
+      <tr>
+        <th>終了日</th>
+        <td><%= @taskapp.end %></td>
+      </tr>
+      <tr>
+        <th>終日</th>
+        <td>
+          <% if @taskapp.all == true %>
+            ○
+            <% else @taskapp.all == false %>
+            
+            <% end %>
+        </td>
+      </tr>
+      <tr>
+        <th>スケジュールメモ</th>
+        <td class = "memo_2"><%= @taskapp.memo %></td>
+      </tr>
+      </table>
+    <div class = "link">
+      <ul>
+        <li><%= link_to "スケジュール一覧に戻る", :taskapps %></li>
+        <li><%= link_to "スケジュールを編集する", edit_taskapp_path %></li>
+        <li><%= link_to "スケジュールを削除する", taskapp_path, method: :delete, data: { confirm: "本当に削除しますか？" } %></li>
+      </ul>
+    </div>
+    </div>
