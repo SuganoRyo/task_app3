@@ -1,0 +1,96 @@
+header, footer {
+    width: 100%;
+    padding: 10px;
+    background: #c52f24;
+    color: #fff;
+    margin: 0px;
+}
+
+header {
+    display: block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.main_container {
+    margin: 50px 15px;
+}
+
+input, pre {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #ffdfdf;
+}
+
+table th, table td {
+    border: solid 1px black;
+    padding: 10px 20px;
+}
+
+table td {
+    background-color: #f1c8c861;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 0px;
+}
+
+input[type=submit] {
+    width: auto;
+}
+
+.memo {
+    width: 100px;
+    height: 50px;
+}
+
+.form-control {
+    font-size: 15px;
+}
+
+.memo_2 {
+    width: 170px;
+    height: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.notice {
+    padding: 15px;
+    width: 400px;
+    text-align: center;
+    background-color: #ec98ac8f;
+    border: 2px solid #ec7592;
+}
+
+.success {
+    padding: 15px;
+    width: 400px;
+    text-align: center;
+    background-color: #98ecaa7a;
+    border: 2px solid #5cd075;
+}
